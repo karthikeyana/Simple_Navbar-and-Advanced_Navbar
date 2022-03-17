@@ -1,0 +1,84 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* learning flexbox */
+
+html {
+    background: #1d5286;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+    line-height: 1.6;
+    text-align: center;
+    height: 3000px;
+}
+
+.flex-container {
+    margin: 1em 0;
+    border: 1px solid white;
+}
+
+.flex-item {
+    border: 2px solid gray;
+}
+
+h1,h2,h3 {
+    color: white;
+    margin: 0;
+    line-height: 1;
+    font-family: 'Asap',sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 4em;
+}
+h3 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.flex-container {
+    display: flex;
+    height: 300px;
+    /* flex-direction: row;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-end; 
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-shrink:0; */
+}
+
+.flex-item:nth-child(1){
+    align-self: stretch; 
+}
+
+.flex-item:nth-child(2){
+    align-self: center; 
+}
+
+.flex-item:nth-child(3){
+    align-self: flex-end; 
+}
+
+.flex-item:nth-child(4){
+    align-self: flex-start; 
+}
+
+.flex-item:nth-child(5){
+    align-self: center; 
+}
+
+
+/*  Menu using flexbox */
